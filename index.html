@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sanjit Gaming - About</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Orbitron", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+        color: #fff;
+        padding: 40px;
+        overflow-x: hidden;
+      }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #0ff;
+        border-radius: 10px;
+      }
+
+      .logo {
+        width: 120px;
+        height: auto;
+        border: 2px solid #0ff;
+        border-radius: 12px;
+        box-shadow: 0 0 20px #0ff;
+        margin-bottom: 20px;
+      }
+
+      .title {
+        font-size: 48px;
+        color: #0ff;
+        text-shadow: 0 0 20px #0ff, 0 0 30px #0ff;
+        margin-bottom: 20px;
+        animation: glow 2s infinite alternate;
+      }
+
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 10px #0ff;
+        }
+        to {
+          text-shadow: 0 0 30px #0ff, 0 0 40px #0ff;
+        }
+      }
+
+      .card {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 30px;
+        border-radius: 15px;
+        border: 1px solid #0ff;
+        box-shadow: 0 0 20px #0ff;
+        margin-bottom: 30px;
+      }
+
+      .discord-button {
+        display: inline-block;
+        background: #5865f2;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s;
+        margin-top: 10px;
+        box-shadow: 0 0 15px #5865f2;
+      }
+
+      .discord-button:hover {
+        background: #4752c4;
+      }
+
+      .avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 3px solid #0ff;
+        box-shadow: 0 0 20px #0ff;
+        margin-bottom: 15px;
+      }
+
+      .socials a {
+        margin: 0 10px;
+        color: #0ff;
+        text-decoration: none;
+        font-size: 24px;
+        transition: 0.3s;
+      }
+
+      .socials a:hover {
+        color: #fff;
+        text-shadow: 0 0 10px #0ff;
+      }
+
+      .bar {
+        margin-top: 15px;
+      }
+
+      .bar label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .bar progress {
+        width: 100%;
+        height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://avatars.githubusercontent.com/u/152606281?v=4"
+      alt="Sanjit Logo"
+      class="logo"
+    />
+
+    <h1 class="title">🎮 Sanjit Gaming</h1>
+
+    <div class="card">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/147/147142.png"
+        alt="avatar"
+        class="avatar"
+      />
+      <p>
+        Hello! I'm Sanjit — a passionate gamer, editor, and developer. I create
+        content to entertain and teach.
+      </p>
+      <a
+        href="https://discord.gg/vxk3BVrEQG"
+        target="_blank"
+        class="discord-button"
+        >Join My Discord</a
+      >
+    </div>
+
+    <div class="card">
+      <h2>📺 Channel Overview</h2>
+      <p>🎮 Gaming • ✂️ Editing • 🧠 Knowledge Sharing</p>
+      <p>💬 YouTube uploads weekly | 🎉 Events on Discord</p>
+      <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/videoseries?list=UUwZ_XjfDy1SG50gmI1fLjpQ"
+        title="SanjitGamingYT Uploads"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+
+    <div class="card">
+      <h2>🔗 Connect With Me</h2>
+      <div class="socials">
+        <div class="social-links">
+          <div>
+            <style>
+              button {
+                background-color: #1da1f2;
+                color: white;
+                padding: 10px 20px;
+                margin: 5px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+              }
+            </style>
+            
+            <button onclick="window.open('https://instagram.com/sanjit_gaming_yt', '_blank')">Instagram</button>
+            <button onclick="window.open('https://www.youtube.com/@SanjitGamingYT', '_blank')">YouTube</button>
+            <button onclick="window.open('https://twitter.com/your_username', '_blank')">Twitter</button>
+            
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🧠 Skills</h2>
+      <div class="bar">
+        <label>Gaming</label>
+        <progress value="95" max="100"></progress>
+      </div>
+      <div class="bar">
+        <label>Video Editing</label>
+        <progress value="85" max="100"></progress>
+      </div>
+      <div class="bar">
+        <label>Website Development</label>
+        <progress value="80" max="100"></progress>
+      </div>
+    </div>
+  </body>
+</html>
