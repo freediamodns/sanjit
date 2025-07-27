@@ -1,134 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Playlists - Sanjit Gaming</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #111;
-      color: #fff;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sanjit Gaming - Playlists</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Orbitron", sans-serif;
+      }
 
-    header {
-      background-color: #222;
-      padding: 20px;
-      text-align: center;
-    }
+      body {
+        background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+        color: #fff;
+        padding: 40px;
+        overflow-x: hidden;
+      }
 
-    nav {
-      background-color: #333;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 10px 0;
-    }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #0ff;
+        border-radius: 10px;
+      }
 
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      padding: 8px 16px;
-      transition: background-color 0.3s;
-    }
+      .logo {
+        width: 120px;
+        height: auto;
+        border: 2px solid #0ff;
+        border-radius: 12px;
+        box-shadow: 0 0 20px #0ff;
+        margin-bottom: 20px;
+      }
 
-    nav a:hover {
-      background-color: #555;
-      border-radius: 5px;
-    }
+      .title {
+        font-size: 48px;
+        color: #0ff;
+        text-shadow: 0 0 20px #0ff, 0 0 30px #0ff;
+        margin-bottom: 20px;
+        animation: glow 2s infinite alternate;
+      }
 
-    h1 {
-      text-align: center;
-      margin-top: 40px;
-    }
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 10px #0ff;
+        }
+        to {
+          text-shadow: 0 0 30px #0ff, 0 0 40px #0ff;
+        }
+      }
 
-    .youtube-button {
-      display: flex;
-      justify-content: center;
-      margin-top: 30px;
-    }
+      .card {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 30px;
+        border-radius: 15px;
+        border: 1px solid #0ff;
+        box-shadow: 0 0 20px #0ff;
+        margin-bottom: 30px;
+        text-align: center;
+      }
 
-    .youtube-button a {
-      background-color: #ff0000;
-      color: white;
-      padding: 14px 28px;
-      text-decoration: none;
-      font-size: 18px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      transition: background-color 0.3s;
-    }
+      .playlist-button {
+        display: inline-block;
+        background: #ff0000;
+        color: white;
+        padding: 14px 28px;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        text-decoration: none;
+        box-shadow: 0 0 15px #ff0000;
+        transition: 0.3s;
+      }
 
-    .youtube-button a:hover {
-      background-color: #cc0000;
-    }
+      .playlist-button:hover {
+        background: #cc0000;
+        box-shadow: 0 0 25px #ff0000;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://avatars.githubusercontent.com/u/152606281?v=4"
+      alt="Sanjit Logo"
+      class="logo"
+    />
 
-    footer {
-      margin-top: 60px;
-      background-color: #222;
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
-      color: #ccc;
-    }
+    <h1 class="title"> YouTube Playlists</h1>
 
-    footer a {
-      color: #ccc;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h2>Sanjit Gaming</h2>
-  </header>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="contact.html">Contact</a>
-    <a href="codes.html">Codes</a>
-    <a href="help.html">Help</a>
-    <a href="playlist.html">Playlist</a>
-  </nav>
-
-  <h1>🎮 Playlists</h1>
-
-  <div class="youtube-button">
-    <a href="https://www.youtube.com/@SanjitGamingYT/playlists" target="_blank">📺 View All Playlists on YouTube</a>
-  </div>
-
-<footer style="background-color: #111; color: #fff; padding: 40px 0; text-align: center;">
-  <div style="max-width: 1200px; margin: auto; padding: 0 20px;">
-
-    <h2 style="margin-bottom: 20px;">Quick Links</h2>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 30px;">
-      <!-- Internal Links -->
-      <a href="/sanjit/" style="color: #fff; text-decoration: none;">About Me</a>
-      <a href="/contact.html" style="color: #fff; text-decoration: none;">Contact</a>
-      <a href="/codes.html" style="color: #fff; text-decoration: none;">Codes</a>
-      <a href="/help.html" style="color: #fff; text-decoration: none;">Help</a>
-      <a href="/playlist.html" style="color: #fff; text-decoration: none;">Playlist</a>
-
-      <!-- External Links -->
-      <a href="https://www.youtube.com/SanjitGamingYT" target="_blank" style="color: #fff; text-decoration: none;">YouTube Channel</a>
-      <a href="https://instagram.com/sanjit_gaming_yt" target="_blank" style="color: #fff; text-decoration: none;">Instagram ID</a>
-      <a href="https://whatsapp.com/channel/0029VaAcKAs6buMSJP8x9A1n" target="_blank" style="color: #fff; text-decoration: none;">WhatsApp Channel</a>
-      <a href="https://facebook.com/sanjitgaming2020" target="_blank" style="color: #fff; text-decoration: none;">Facebook Page</a>
-      <a href="https://discord.gg/h56qPefucZ" target="_blank" style="color: #fff; text-decoration: none;">Join Discord</a>
+    <div class="card">
+      <p>Click the button below to explore all my YouTube playlists!</p>
+      <a
+        class="playlist-button"
+        href="https://www.youtube.com/@SanjitGamingYT/playlists"
+        target="_blank"
+        >▶️ View Playlists</a
+      >
     </div>
 
-    <hr style="border-color: #444; margin-bottom: 20px;">
+    <!-- Footer -->
+    <footer style="background-color: #111; color: #fff; padding: 40px 0; text-align: center;">
+      <div style="max-width: 1200px; margin: auto; padding: 0 20px;">
 
-    <p style="margin: 0;">© 2025 <strong>Sanjit Gaming</strong>. All rights reserved.</p>
+        <h2 style="margin-bottom: 20px;">Quick Links</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 30px;">
+          <!-- Internal Links -->
+          <a href="/sanjit/" style="color: #fff; text-decoration: none;">About Me</a>
+          <a href="/contact.html" style="color: #fff; text-decoration: none;">Contact</a>
+          <a href="/codes.html" style="color: #fff; text-decoration: none;">Codes</a>
+          <a href="/help.html" style="color: #fff; text-decoration: none;">Help</a>
+          <a href="/playlist.html" style="color: #fff; text-decoration: none;">Playlist</a>
 
-</body>
+          <!-- External Links -->
+          <a href="https://www.youtube.com/SanjitGamingYT" target="_blank" style="color: #fff; text-decoration: none;">YouTube Channel</a>
+          <a href="https://instagram.com/sanjit_gaming_yt" target="_blank" style="color: #fff; text-decoration: none;">Instagram ID</a>
+          <a href="https://whatsapp.com/channel/0029VaAcKAs6buMSJP8x9A1n" target="_blank" style="color: #fff; text-decoration: none;">WhatsApp Channel</a>
+          <a href="https://facebook.com/sanjitgaming2020" target="_blank" style="color: #fff; text-decoration: none;">Facebook Page</a>
+          <a href="https://discord.gg/h56qPefucZ" target="_blank" style="color: #fff; text-decoration: none;">Join Discord</a>
+        </div>
+
+        <hr style="border-color: #444; margin-bottom: 20px;">
+        <p style="margin: 0;">© 2025 <strong>Sanjit Gaming</strong>. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
