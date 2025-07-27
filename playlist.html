@@ -3,147 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Playlists | Sanjit Gaming</title>
-      <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Orbitron", sans-serif;
-      }
+  <title>Playlists | Sanjit</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #111;
+      color: #fff;
+    }
 
-      body {
-        background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
-        color: #fff;
-        padding: 40px;
-        overflow-x: hidden;
-      }
+    header {
+      background-color: #1e1e1e;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #0ff;
-        border-radius: 10px;
-      }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #00ffff;
+    }
 
-      .logo {
-        width: 120px;
-        height: auto;
-        border: 2px solid #0ff;
-        border-radius: 12px;
-        box-shadow: 0 0 20px #0ff;
-        margin-bottom: 20px;
-      }
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-      .title {
-        font-size: 48px;
-        color: #0ff;
-        text-shadow: 0 0 20px #0ff, 0 0 30px #0ff;
-        margin-bottom: 20px;
-        animation: glow 2s infinite alternate;
-      }
+    nav a:hover {
+      color: #00ffff;
+    }
 
-      @keyframes glow {
-        from {
-          text-shadow: 0 0 10px #0ff;
-        }
-        to {
-          text-shadow: 0 0 30px #0ff, 0 0 40px #0ff;
-        }
-      }
+    .container {
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-      .card {
-        background: rgba(0, 0, 0, 0.3);
-        padding: 30px;
-        border-radius: 15px;
-        border: 1px solid #0ff;
-        box-shadow: 0 0 20px #0ff;
-        margin-bottom: 30px;
-      }
+    .container h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #00ffff;
+    }
 
-      .discord-button {
-        display: inline-block;
-        background: #5865f2;
-        color: white;
-        padding: 12px 24px;
-        border-radius: 10px;
-        text-decoration: none;
-        font-weight: bold;
-        transition: background 0.3s;
-        margin-top: 10px;
-        box-shadow: 0 0 15px #5865f2;
-      }
+    .yt-btn {
+      background: #ff0000;
+      padding: 12px 20px;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
 
-      .discord-button:hover {
-        background: #4752c4;
-      }
+    .yt-btn:hover {
+      background: #cc0000;
+    }
 
-      .avatar {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        border: 3px solid #0ff;
-        box-shadow: 0 0 20px #0ff;
-        margin-bottom: 15px;
-      }
+    footer {
+      background: #1e1e1e;
+      color: #aaa;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 40px;
+    }
 
-      .socials a {
-        margin: 0 10px;
-        color: #0ff;
-        text-decoration: none;
-        font-size: 24px;
-        transition: 0.3s;
-      }
+    footer a {
+      color: #00ffff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
 
-      .socials a:hover {
-        color: #fff;
-        text-shadow: 0 0 10px #0ff;
-      }
+    footer a:hover {
+      text-decoration: underline;
+    }
 
-      .bar {
-        margin-top: 15px;
-      }
+    select {
+      background: #222;
+      color: #fff;
+      padding: 6px 10px;
+      border: 1px solid #444;
+      border-radius: 5px;
+    }
 
-      .bar label {
-        display: block;
-        margin-bottom: 5px;
-      }
-
-      .bar progress {
-        width: 100%;
-        height: 20px;
-      }
-    </style>
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <h1>Sanjit Gaming</h1>
-    <select onchange="location = this.value;" class="top-selector">
-      <option selected disabled>Navigate</option>
-      <option value="/sanjit/">Home</option>
-      <option value="/sanjit/about">About</option>
-      <option value="/sanjit/contact">Contact</option>
-      <option value="/sanjit/codes">Codes</option>
-      <option value="/sanjit/help">Help</option>
-      <option value="/sanjit/playlist">Playlist</option>
-    </select>
+  <header>
+    <h1>Sanjit</h1>
+    <div class="nav-right">
+      <nav>
+        <a href="/sanjit/">Home</a>
+        <a href="/sanjit/about">About</a>
+        <a href="/sanjit/contact">Contact</a>
+        <a href="/sanjit/codes">Codes</a>
+        <a href="/sanjit/help">Help</a>
+        <a href="/sanjit/playlist">Playlist</a>
+      </nav>
+      <select onchange="location = this.value;">
+        <option value="#">Quick Links</option>
+        <option value="/sanjit/">🏠 Home</option>
+        <option value="/sanjit/about">👤 About</option>
+        <option value="/sanjit/contact">📩 Contact</option>
+        <option value="/sanjit/codes">💻 Codes</option>
+        <option value="/sanjit/help">❓ Help</option>
+        <option value="/sanjit/playlist">🎵 Playlist</option>
+      </select>
+    </div>
   </header>
 
-  <main class="main">
-    <h2>Playlists</h2>
-    <p>Click below to visit the official YouTube playlists page:</p>
-    <a href="https://www.youtube.com/@SanjitGamingYT/playlists" target="_blank" class="btn">🎬 Visit Playlists</a>
-  </main>
+  <div class="container">
+    <h2>Watch All My YouTube Playlists</h2>
+    <a class="yt-btn" href="https://www.youtube.com/@SanjitGamingYT/playlists" target="_blank">
+      Go to YouTube Playlists →
+    </a>
+  </div>
 
-  <footer class="footer">
-    <p>© 2025 Sanjit Gaming. All rights reserved.</p>
-    <div class="quick-links">
-      <a href="/sanjit/">Home</a>
-      <a href="/sanjit/about">About</a>
-      <a href="/sanjit/contact">Contact</a>
-      <a href="/sanjit/codes">Codes</a>
-      <a href="/sanjit/help">Help</a>
+  <footer>
+    <p>&copy; 2025 Sanjit | All rights reserved.</p>
+    <div>
+      <a href="/sanjit/">Home</a> |
+      <a href="/sanjit/about">About</a> |
+      <a href="/sanjit/contact">Contact</a> |
+      <a href="/sanjit/codes">Codes</a> |
+      <a href="/sanjit/help">Help</a> |
       <a href="/sanjit/playlist">Playlist</a>
     </div>
   </footer>
