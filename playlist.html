@@ -3,140 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Playlists | Sanjit</title>
+  <title>Playlist - Sanjit</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #111;
+      font-family: Arial, sans-serif;
+      background-color: #111;
       color: #fff;
     }
 
     header {
-      background-color: #1e1e1e;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      background-color: #1a1a1a;
+      padding: 20px;
+      text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 24px;
-      color: #00ffff;
+      font-size: 2em;
+      color: #00f2ff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #222;
+      padding: 10px;
+      gap: 20px;
     }
 
     nav a {
-      color: #fff;
-      margin-left: 20px;
+      color: #ccc;
       text-decoration: none;
       font-weight: bold;
+      transition: 0.3s;
     }
 
     nav a:hover {
-      color: #00ffff;
+      color: #00f2ff;
     }
 
-    .container {
-      padding: 40px 20px;
+    .content {
+      padding: 20px;
       text-align: center;
     }
 
-    .container h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: #00ffff;
+    .content h2 {
+      color: #00f2ff;
+      margin-bottom: 10px;
     }
 
-    .yt-btn {
-      background: #ff0000;
+    .content p {
+      color: #aaa;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
       padding: 12px 20px;
-      color: white;
-      font-size: 18px;
-      border: none;
-      border-radius: 8px;
+      background-color: #00f2ff;
+      color: #000;
       text-decoration: none;
-      transition: background 0.3s ease;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
     }
 
-    .yt-btn:hover {
-      background: #cc0000;
+    .btn:hover {
+      background-color: #00c2cc;
     }
 
     footer {
-      background: #1e1e1e;
-      color: #aaa;
+      background-color: #1a1a1a;
+      color: #777;
+      padding: 20px;
       text-align: center;
-      padding: 20px 10px;
       margin-top: 40px;
     }
 
-    footer a {
-      color: #00ffff;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
     select {
-      background: #222;
-      color: #fff;
-      padding: 6px 10px;
-      border: 1px solid #444;
-      border-radius: 5px;
-    }
-
-    .nav-right {
-      display: flex;
-      align-items: center;
-      gap: 15px;
+      margin: 10px;
+      padding: 8px;
+      border-radius: 4px;
+      border: none;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Sanjit</h1>
-    <div class="nav-right">
-      <nav>
-        <a href="/sanjit/">Home</a>
-        <a href="/sanjit/about">About</a>
-        <a href="/sanjit/contact">Contact</a>
-        <a href="/sanjit/codes">Codes</a>
-        <a href="/sanjit/help">Help</a>
-        <a href="/sanjit/playlist">Playlist</a>
-      </nav>
-      <select onchange="location = this.value;">
-        <option value="#">Quick Links</option>
-        <option value="/sanjit/">🏠 Home</option>
-        <option value="/sanjit/about">👤 About</option>
-        <option value="/sanjit/contact">📩 Contact</option>
-        <option value="/sanjit/codes">💻 Codes</option>
-        <option value="/sanjit/help">❓ Help</option>
-        <option value="/sanjit/playlist">🎵 Playlist</option>
-      </select>
-    </div>
+    <h1>Sanjit Gaming</h1>
   </header>
 
-  <div class="container">
-    <h2>Watch All My YouTube Playlists</h2>
-    <a class="yt-btn" href="https://www.youtube.com/@SanjitGamingYT/playlists" target="_blank">
-      Go to YouTube Playlists →
-    </a>
+  <nav>
+    <a href="/sanjit">Home</a>
+    <a href="/sanjit/codes">Codes</a>
+    <a href="/sanjit/help">Help</a>
+    <a href="/sanjit/playlist">Playlist</a>
+  </nav>
+
+  <div class="content">
+    <h2>YouTube Playlist</h2>
+    <p>Click below to see all playlists on Sanjit Gaming's YouTube channel.</p>
+    <a href="https://www.youtube.com/@SanjitGamingYT/playlists" target="_blank" class="btn">Visit Playlists</a>
   </div>
 
   <footer>
-    <p>&copy; 2025 Sanjit | All rights reserved.</p>
-    <div>
-      <a href="/sanjit/">Home</a> |
-      <a href="/sanjit/about">About</a> |
-      <a href="/sanjit/contact">Contact</a> |
-      <a href="/sanjit/codes">Codes</a> |
-      <a href="/sanjit/help">Help</a> |
-      <a href="/sanjit/playlist">Playlist</a>
-    </div>
+    <p>&copy; 2025 Sanjit Gaming. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
